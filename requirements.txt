@@ -1,0 +1,6 @@
+aiogram==3.7.0
+sqlalchemy==2.0.30
+aiosqlite==0.20.0
+pydantic-settings==2.3.3
+pydantic==2.7.4
+pixivpy-async==1.2.14

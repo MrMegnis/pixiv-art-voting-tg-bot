@@ -1,0 +1,13 @@
+version: '3.8'
+
+services:
+  telegram-bot:
+    build: .
+    container_name: art-assessor-bot
+    restart: always
+    env_file:
+      - .env
+    volumes:
+      # Связываем папку data на хосте с папкой /app/data в контейнере
+      # для сохранения БД и json-файлов
+      - ./data:/code/data
